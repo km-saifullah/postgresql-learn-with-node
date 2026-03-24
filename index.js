@@ -16,8 +16,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors(corsOptions));
 
-app.get("/", (req, res) => {
-  res.send("<h1>Hello world</h1>");
-});
+app.use("/", employeeRouter);
 
 app.listen(PORT, () => console.log(`http://localhost:${PORT}`));

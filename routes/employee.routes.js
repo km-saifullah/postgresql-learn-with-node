@@ -1,9 +1,8 @@
 import express from "express";
+import { getAllEmployee } from "../controllers/employee.controller.js";
 
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  res.send("get");
-});
+router.get("/", getAllEmployee);
 
 export default router;

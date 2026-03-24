@@ -1,0 +1,10 @@
+enter to the postgresql shell: sudo -u postgres psql
+
+show all users: \du
+
+show all databases; \l
+
+show all tables: \dt 
+
+alter password: ALTER USER postgres PASSWORD "your password"
+
